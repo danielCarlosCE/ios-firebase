@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6508769E1D11FE7300F2E6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508769D1D11FE7300F2E6E5 /* AppDelegate.swift */; };
-		650876A01D11FE7300F2E6E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508769F1D11FE7300F2E6E5 /* ViewController.swift */; };
 		650876A31D11FE7300F2E6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650876A11D11FE7300F2E6E5 /* Main.storyboard */; };
 		650876A51D11FE7300F2E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650876A41D11FE7300F2E6E5 /* Assets.xcassets */; };
 		650876A81D11FE7300F2E6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650876A61D11FE7300F2E6E5 /* LaunchScreen.storyboard */; };
 		650876B31D11FE7300F2E6E5 /* mobile_eventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */; };
+		653A09211D18B23F00500E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653A09201D18B23F00500E4F /* GoogleService-Info.plist */; };
+		653A09231D18B64000500E4F /* FireBStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A09221D18B64000500E4F /* FireBStorage.swift */; };
+		657B163C1D1421B100A25676 /* TalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B163B1D1421B100A25676 /* TalkCell.swift */; };
+		657B163E1D14252200A25676 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B163D1D14252200A25676 /* TalksViewController.swift */; };
+		657B16411D14268100A25676 /* TalkCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B16401D14268100A25676 /* TalkCellModel.swift */; };
+		657B16431D1426E600A25676 /* TalksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B16421D1426E600A25676 /* TalksDataSource.swift */; };
+		65CBDF611D185B3E00144668 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF601D185B3E00144668 /* Talk.swift */; };
+		65CBDF631D185E9100144668 /* TalkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF621D185E9100144668 /* TalkApi.swift */; };
+		65CBDF661D18609E00144668 /* TalkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF651D18609E00144668 /* TalkCoordinator.swift */; };
+		65CBDF691D186F3F00144668 /* FireBTalkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF681D186F3F00144668 /* FireBTalkApi.swift */; };
+		65CBDF6B1D186F5000144668 /* FireBTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF6A1D186F5000144668 /* FireBTalk.swift */; };
+		6AF9A86619944B814B9A787F /* Pods_mobile_event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1D2012087449F73AA66797 /* Pods_mobile_event.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6508769A1D11FE7300F2E6E5 /* mobile-event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-event.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6508769D1D11FE7300F2E6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6508769F1D11FE7300F2E6E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		650876A21D11FE7300F2E6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		650876A41D11FE7300F2E6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		650876A71D11FE7300F2E6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +46,21 @@
 		650876AE1D11FE7300F2E6E5 /* mobile-eventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-eventTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_eventTests.swift; sourceTree = "<group>"; };
 		650876B41D11FE7300F2E6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653A09201D18B23F00500E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		653A09221D18B64000500E4F /* FireBStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBStorage.swift; sourceTree = "<group>"; };
+		657B163B1D1421B100A25676 /* TalkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCell.swift; sourceTree = "<group>"; };
+		657B163D1D14252200A25676 /* TalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
+		657B16401D14268100A25676 /* TalkCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCellModel.swift; sourceTree = "<group>"; };
+		657B16421D1426E600A25676 /* TalksDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksDataSource.swift; sourceTree = "<group>"; };
+		65CBDF601D185B3E00144668 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		65CBDF621D185E9100144668 /* TalkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkApi.swift; sourceTree = "<group>"; };
+		65CBDF651D18609E00144668 /* TalkCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCoordinator.swift; sourceTree = "<group>"; };
+		65CBDF681D186F3F00144668 /* FireBTalkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBTalkApi.swift; sourceTree = "<group>"; };
+		65CBDF6A1D186F5000144668 /* FireBTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBTalk.swift; sourceTree = "<group>"; };
+		65CBDF6D1D1871A500144668 /* mobile-event-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mobile-event-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FD154A6988E9E1232483368 /* Pods-mobile-event.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-event.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-event/Pods-mobile-event.debug.xcconfig"; sourceTree = "<group>"; };
+		A60654C1D4D3C60E938E8E05 /* Pods-mobile-event.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-event.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobile-event/Pods-mobile-event.release.xcconfig"; sourceTree = "<group>"; };
+		CF1D2012087449F73AA66797 /* Pods_mobile_event.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_event.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF9A86619944B814B9A787F /* Pods_mobile_event.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +82,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E71186840A97FF922B64AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FD154A6988E9E1232483368 /* Pods-mobile-event.debug.xcconfig */,
+				A60654C1D4D3C60E938E8E05 /* Pods-mobile-event.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6471EB6DD985CD547404E327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1D2012087449F73AA66797 /* Pods_mobile_event.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		650876911D11FE7300F2E6E5 = {
 			isa = PBXGroup;
 			children = (
 				6508769C1D11FE7300F2E6E5 /* mobile-event */,
 				650876B11D11FE7300F2E6E5 /* mobile-eventTests */,
 				6508769B1D11FE7300F2E6E5 /* Products */,
+				23E71186840A97FF922B64AD /* Pods */,
+				6471EB6DD985CD547404E327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				6508769D1D11FE7300F2E6E5 /* AppDelegate.swift */,
-				6508769F1D11FE7300F2E6E5 /* ViewController.swift */,
 				650876A11D11FE7300F2E6E5 /* Main.storyboard */,
-				650876A41D11FE7300F2E6E5 /* Assets.xcassets */,
-				650876A61D11FE7300F2E6E5 /* LaunchScreen.storyboard */,
-				650876A91D11FE7300F2E6E5 /* Info.plist */,
+				65CBDF5F1D185B1C00144668 /* Model */,
+				657B163F1D14266A00A25676 /* View */,
+				657B16461D14358000A25676 /* Controller */,
+				65CBDF641D18608900144668 /* Coordinator */,
+				657B16471D14359C00A25676 /* Support Files */,
 			);
 			path = "mobile-event";
 			sourceTree = "<group>";
@@ -96,6 +142,64 @@
 			path = "mobile-eventTests";
 			sourceTree = "<group>";
 		};
+		657B163F1D14266A00A25676 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				657B163B1D1421B100A25676 /* TalkCell.swift */,
+				657B16401D14268100A25676 /* TalkCellModel.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		657B16461D14358000A25676 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				657B163D1D14252200A25676 /* TalksViewController.swift */,
+				657B16421D1426E600A25676 /* TalksDataSource.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		657B16471D14359C00A25676 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				653A09201D18B23F00500E4F /* GoogleService-Info.plist */,
+				650876A61D11FE7300F2E6E5 /* LaunchScreen.storyboard */,
+				650876A41D11FE7300F2E6E5 /* Assets.xcassets */,
+				650876A91D11FE7300F2E6E5 /* Info.plist */,
+				65CBDF6D1D1871A500144668 /* mobile-event-Bridging-Header.h */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		65CBDF5F1D185B1C00144668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65CBDF671D186F1E00144668 /* Firebase */,
+				65CBDF601D185B3E00144668 /* Talk.swift */,
+				65CBDF621D185E9100144668 /* TalkApi.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65CBDF641D18608900144668 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				65CBDF651D18609E00144668 /* TalkCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		65CBDF671D186F1E00144668 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				65CBDF681D186F3F00144668 /* FireBTalkApi.swift */,
+				65CBDF6A1D186F5000144668 /* FireBTalk.swift */,
+				653A09221D18B64000500E4F /* FireBStorage.swift */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 650876B71D11FE7300F2E6E5 /* Build configuration list for PBXNativeTarget "mobile-event" */;
 			buildPhases = (
+				685EA9D14B3DE72121081D59 /* Check Pods Manifest.lock */,
 				650876961D11FE7300F2E6E5 /* Sources */,
 				650876971D11FE7300F2E6E5 /* Frameworks */,
 				650876981D11FE7300F2E6E5 /* Resources */,
+				F86E37C1F49B2E7A1B8CD200 /* Embed Pods Frameworks */,
+				B3C50127D7AE74D5E4090155 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				650876A81D11FE7300F2E6E5 /* LaunchScreen.storyboard in Resources */,
+				653A09211D18B23F00500E4F /* GoogleService-Info.plist in Resources */,
 				650876A51D11FE7300F2E6E5 /* Assets.xcassets in Resources */,
 				650876A31D11FE7300F2E6E5 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +300,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		685EA9D14B3DE72121081D59 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C50127D7AE74D5E4090155 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-event/Pods-mobile-event-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F86E37C1F49B2E7A1B8CD200 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobile-event/Pods-mobile-event-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		650876961D11FE7300F2E6E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650876A01D11FE7300F2E6E5 /* ViewController.swift in Sources */,
+				65CBDF6B1D186F5000144668 /* FireBTalk.swift in Sources */,
+				65CBDF661D18609E00144668 /* TalkCoordinator.swift in Sources */,
+				657B163E1D14252200A25676 /* TalksViewController.swift in Sources */,
 				6508769E1D11FE7300F2E6E5 /* AppDelegate.swift in Sources */,
+				657B163C1D1421B100A25676 /* TalkCell.swift in Sources */,
+				65CBDF691D186F3F00144668 /* FireBTalkApi.swift in Sources */,
+				657B16411D14268100A25676 /* TalkCellModel.swift in Sources */,
+				653A09231D18B64000500E4F /* FireBStorage.swift in Sources */,
+				65CBDF631D185E9100144668 /* TalkApi.swift in Sources */,
+				657B16431D1426E600A25676 /* TalksDataSource.swift in Sources */,
+				65CBDF611D185B3E00144668 /* Talk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,23 +490,38 @@
 		};
 		650876B81D11FE7300F2E6E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD154A6988E9E1232483368 /* Pods-mobile-event.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mobile-event",
+				);
 				INFOPLIST_FILE = "mobile-event/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcarlosce.mobile-event";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mobile-event/mobile-event-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		650876B91D11FE7300F2E6E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60654C1D4D3C60E938E8E05 /* Pods-mobile-event.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mobile-event",
+				);
 				INFOPLIST_FILE = "mobile-event/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielcarlosce.mobile-event";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mobile-event/mobile-event-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -388,6 +568,7 @@
 				650876B91D11FE7300F2E6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		650876BA1D11FE7300F2E6E5 /* Build configuration list for PBXNativeTarget "mobile-eventTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +577,7 @@
 				650876BC1D11FE7300F2E6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
