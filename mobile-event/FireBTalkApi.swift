@@ -16,6 +16,7 @@ struct FireBTalkApi: TalkApi {
             
             var models = [Talk]()
             for talk  in talks{
+                //map talk to a FireBTalk object
                 if let fireBTalk = FireBTalk(snapShot: talk) {
                   models.append(fireBTalk)
                 }

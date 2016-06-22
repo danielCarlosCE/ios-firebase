@@ -1,39 +1,31 @@
-//
-//  TalksDataSource.swift
-//  mobile-event
-//
-//  Created by Daniel Carlos on 6/17/16.
-//  Copyright © 2016 danielcarlosce. All rights reserved.
-//
-
 import UIKit
 
 class TalksDataSource: NSObject {
     
-    //Mark: properties
+    //MARK: properties
     var talkApi : TalkApi
     
     private var models : [TalkCellModel] = []
     
-    //Mark: inits
+    //MARK: inits
     init(talkApi: TalkApi){
         self.talkApi = talkApi
     }
     
-    //Mark: funcs
+    //MARK: funcs
     func fetchModels(completionHandler: (successfully:Bool)->()){
         
         talkApi.all{ models in
             self.models = models.map{talk in
+                //map model to a view model representation
                 TalkCellModel(talk:talk)
             }
             completionHandler(successfully: true)
         }
-        
     }
 }
 
-extension TalksDataSource :UITableViewDataSource{
+extension TalksDataSource: UITableViewDataSource{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return models.count
     }

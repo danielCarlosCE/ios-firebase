@@ -21,7 +21,7 @@ class TalkCellModel {
         self.speakerName       = talk.speakerName
         self.talkTitle         = talk.talkTitle
         let formater           = NSDateFormatter()
-        formater.dateFormat    = "hh:mm"
+        formater.dateFormat    = "HH:mm"
         self.time              = formater.stringFromDate(talk.time)
     }
     
