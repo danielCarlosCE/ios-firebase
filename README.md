@@ -30,4 +30,4 @@ TalksDataSource(talkApi: FireBTalkApi())
 If we want to change from FireBase to another implementation, we change the coordinator only.
 
 ###Screenshot
-![mobileday](https://cloud.githubusercontent.com/assets/1819682/16266740/bebb6904-385c-11e6-9d00-9cf4a37cd506.jpg)
+![screenshot](https://cloud.githubusercontent.com/assets/1819682/16266863/4e40dd98-385d-11e6-8bc0-f0a2ee43dcd9.png)
