@@ -27,4 +27,4 @@ We are using *constructor injection* to receive an ```TalkApi``` instance on our
 ```
 TalksDataSource(talkApi: FireBTalkApi())
 ```
-If we want change from FireBase to another implementation, we change the coordinator only.
+If we want to change from FireBase to another implementation, we change the coordinator only.
