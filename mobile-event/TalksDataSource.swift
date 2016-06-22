@@ -3,8 +3,7 @@ import UIKit
 class TalksDataSource: NSObject {
     
     //MARK: properties
-    var talkApi : TalkApi
-    
+    private var talkApi : TalkApi
     private var models : [TalkCellModel] = []
     
     //MARK: inits

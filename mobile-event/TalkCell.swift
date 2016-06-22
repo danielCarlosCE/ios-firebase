@@ -18,13 +18,13 @@ class TalkCell : UITableViewCell{
     @IBOutlet weak var pictureContainer: UIView!{
         didSet{
             pictureContainer.layer.borderWidth = 0.8
-            pictureContainer.layer.borderColor = UIColor(red: 236/255, green: 115/255, blue: 87/255, alpha: 1).CGColor
+            pictureContainer.layer.borderColor = accentColor.CGColor
         }
     }
     @IBOutlet weak var descriptionContainer: UIView!{
         didSet{
             descriptionContainer.layer.borderWidth = 0.8
-            descriptionContainer.layer.borderColor = UIColor(red: 236/255, green: 115/255, blue: 87/255, alpha: 1).CGColor
+            descriptionContainer.layer.borderColor = accentColor.CGColor
         }
     }
     

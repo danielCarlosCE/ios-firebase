@@ -1,22 +1,24 @@
 class FireBTalk: Talk {
-    var speakerName       : String
-    var talkTitle         : String
-    var time              : NSDate
+    //MARK: public properties
+    var speakerName : String
+    var talkTitle : String
+    var time : NSDate
     
+    //MARK: privated properties
     private var featurePictureUrl : String
-
     
-    private let speakerNameKey    = "speakerName"
-    private let titleKey          = "title"
+    private let speakerNameKey = "speakerName"
+    private let titleKey = "title"
     private let speakerPictureKey = "speakerPicture"
-    private let timeKey           = "time"
-    private let timedDateFormat   = "MM-dd-yyyy HH:mm"
+    private let timeKey = "time"
+    private let timedDateFormat = "MM-dd-yyyy HH:mm"
     
+    //MARK: inits
     init?( snapShot: FIRDataSnapshot){
-        
-        guard let speakerNameValue       = snapShot.value?[speakerNameKey]    as? String,
-              let talkTitleValue         = snapShot.value?[titleKey]          as? String,
-              let featurePictureUrlValue = snapShot.value?[speakerPictureKey] as? String,
+
+        guard let speakerNameValue       = snapShot.value?[speakerNameKey]     as? String,
+              let talkTitleValue         = snapShot.value?[titleKey]           as? String,
+              let featurePictureUrlValue = snapShot.value?[speakerPictureKey]  as? String,
               let timeValue              = snapShot.value?[timeKey]            as? String else{
                 
                 print("invalid snapShot values")
@@ -28,15 +30,15 @@ class FireBTalk: Talk {
         self.talkTitle = talkTitleValue
         self.featurePictureUrl = featurePictureUrlValue
         
-        let formater           = NSDateFormatter()
-        formater.dateFormat    = timedDateFormat
+        let formater = NSDateFormatter()
+        formater.dateFormat = timedDateFormat
         guard let timeDate = formater.dateFromString(timeValue) else{
             print("invalid time value")
             return nil
         }
         self.time = timeDate
     }
-    
+    //MARK: protocol methods
     func downloadImage( completionHandler: (image: UIImage?) -> Void ){
         FireBStorage().downloadFile(featurePictureUrl) { (download) in
            

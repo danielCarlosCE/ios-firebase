@@ -9,6 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        defaultsUi()
+        
         window = UIWindow()
         
         let talkCoordinator = TalkCoordinator(window: window!)
@@ -17,6 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         return true
+    }
+    
+    func defaultsUi(){
+        let appearance = UINavigationBar.appearance()
+        appearance.barTintColor = primaryColor
     }
 }
 

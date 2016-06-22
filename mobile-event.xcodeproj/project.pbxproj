@@ -14,6 +14,7 @@
 		650876B31D11FE7300F2E6E5 /* mobile_eventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */; };
 		653A09211D18B23F00500E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653A09201D18B23F00500E4F /* GoogleService-Info.plist */; };
 		653A09231D18B64000500E4F /* FireBStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A09221D18B64000500E4F /* FireBStorage.swift */; };
+		6555AB9D1D1AB22800004D65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555AB9C1D1AB22800004D65 /* Constants.swift */; };
 		657B163C1D1421B100A25676 /* TalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B163B1D1421B100A25676 /* TalkCell.swift */; };
 		657B163E1D14252200A25676 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B163D1D14252200A25676 /* TalksViewController.swift */; };
 		657B16411D14268100A25676 /* TalkCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B16401D14268100A25676 /* TalkCellModel.swift */; };
@@ -48,6 +49,7 @@
 		650876B41D11FE7300F2E6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653A09201D18B23F00500E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		653A09221D18B64000500E4F /* FireBStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBStorage.swift; sourceTree = "<group>"; };
+		6555AB9C1D1AB22800004D65 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		657B163B1D1421B100A25676 /* TalkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCell.swift; sourceTree = "<group>"; };
 		657B163D1D14252200A25676 /* TalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
 		657B16401D14268100A25676 /* TalkCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCellModel.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				650876A41D11FE7300F2E6E5 /* Assets.xcassets */,
 				650876A91D11FE7300F2E6E5 /* Info.plist */,
 				65CBDF6D1D1871A500144668 /* mobile-event-Bridging-Header.h */,
+				6555AB9C1D1AB22800004D65 /* Constants.swift */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				65CBDF631D185E9100144668 /* TalkApi.swift in Sources */,
 				657B16431D1426E600A25676 /* TalksDataSource.swift in Sources */,
 				65CBDF611D185B3E00144668 /* Talk.swift in Sources */,
+				6555AB9D1D1AB22800004D65 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

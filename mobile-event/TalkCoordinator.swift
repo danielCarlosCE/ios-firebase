@@ -18,10 +18,19 @@ class TalkCoordinator {
     func start(){
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let talksController = storyboard.instantiateViewControllerWithIdentifier("TalksViewController") as? TalksViewController
-        talksController?.dataSource = TalksDataSource(talkApi: FireBTalkApi())
-        
-        window.rootViewController = talksController
+        if let talksController = storyboard.instantiateViewControllerWithIdentifier("TalksViewController") as? TalksViewController {
+            //inject dependency
+            talksController.dataSource = TalksDataSource(talkApi: FireBTalkApi())
+            
+            //put controller in a navigation controller
+            talksController.title = "Mobile Day"
+            let navigationController = UINavigationController()
+            navigationController.viewControllers = [talksController]
+            
+            //show navigation controller
+            window.rootViewController = navigationController
+        }
+       
         
     }
 }

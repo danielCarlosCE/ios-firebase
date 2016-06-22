@@ -7,7 +7,8 @@ struct FireBTalkApi: TalkApi {
 
         let reference = FIRDatabase.database().reference().child("talks")
         
-        reference.observeSingleEventOfType(.Value,withBlock: { snapshot in
+        //read data once and don't listen for changes
+        reference.observeSingleEventOfType(.Value, withBlock: { snapshot in
            
             guard let talks = snapshot.children.allObjects as? [FIRDataSnapshot] else{
                 completionHandler(models: [])
@@ -22,14 +23,10 @@ struct FireBTalkApi: TalkApi {
                 }
             }
             completionHandler(models: models)
-
-            
             
         }, withCancelBlock: { error in
             print(error)
         })
-
-        
        
     }
 
