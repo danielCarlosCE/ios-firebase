@@ -1,11 +1,3 @@
-//
-//  TalkCell.swift
-//  mobile-event
-//
-//  Created by Daniel Carlos on 6/17/16.
-//  Copyright © 2016 danielcarlosce. All rights reserved.
-//
-
 import UIKit
 
 class TalkCell : UITableViewCell{
@@ -35,9 +27,10 @@ class TalkCell : UITableViewCell{
     
     func setModel(model: TalkCellModel){
         speakerName.text = model.speakerName
-        talkTitle.text   = model.talkTitle
-        time.text        = model.time
-        self.featurePicture.image = nil
+        talkTitle.text = model.talkTitle
+        time.text = model.time
+        
+        featurePicture.image = nil
         model.downloadImage { (image) in
             self.featurePicture.image = image
         }

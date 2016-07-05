@@ -1,11 +1,3 @@
-//
-//  TalkCellModel.swift
-//  mobile-event
-//
-//  Created by Daniel Carlos on 6/17/16.
-//  Copyright © 2016 danielcarlosce. All rights reserved.
-//
-
 import UIKit
 
 class TalkCellModel {
@@ -26,7 +18,16 @@ class TalkCellModel {
     }
     
     func downloadImage(completionHandler: (image: UIImage?) -> Void ){
-        self.talk.downloadImage(completionHandler)
+        self.talk.downloadImage { (data) in
+           
+            guard data != nil else {
+                completionHandler(image: nil)
+                return
+            }
+            
+            let image = UIImage(data: data!)
+            completionHandler(image: image)
+        }
     }
     
     

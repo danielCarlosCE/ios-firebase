@@ -1,6 +1,5 @@
 import Firebase
 
-
 struct FireBTalkApi: TalkApi {
     
     func all(completionHandler: (models: [Talk]) -> Void) {
@@ -10,6 +9,7 @@ struct FireBTalkApi: TalkApi {
         //read data once and don't listen for changes
         reference.observeSingleEventOfType(.Value, withBlock: { snapshot in
            
+            //make sure we actually have data on this location
             guard let talks = snapshot.children.allObjects as? [FIRDataSnapshot] else{
                 completionHandler(models: [])
                 return
@@ -26,6 +26,8 @@ struct FireBTalkApi: TalkApi {
             
         }, withCancelBlock: { error in
             print(error)
+            //TODO: handle errors properly
+            completionHandler(models: [])
         })
        
     }

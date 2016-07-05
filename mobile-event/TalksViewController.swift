@@ -3,28 +3,17 @@ import UIKit
 class TalksViewController: UITableViewController{
     
     //to be injected
-    var dataSource: TalksDataSource!{
-        didSet{
-            fetchModels()
+    var dataSource: TalksDataSource!
+    
+    override func viewDidLoad() {
+        guard dataSource != nil else {
+            return
+        }
+        
+        tableView.dataSource = dataSource
+        dataSource!.fetchModels {
+            self.tableView.reloadData()
         }
     }
-    
-    func fetchModels(){
-        self.dataSource?.fetchModels(){ successfully in
-            if successfully {
-                
-                //check if tableView is loaded already
-                if self.tableView != nil {
-                    self.tableView.dataSource = self.dataSource
-                    //back to main thread
-                    dispatch_async(dispatch_get_main_queue(), {
-                        self.tableView.reloadData()
-                    })
-                }
-                
-            }
-        }
-    }
-    
     
 }
