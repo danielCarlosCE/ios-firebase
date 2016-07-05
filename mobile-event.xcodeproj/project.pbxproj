@@ -11,7 +11,6 @@
 		650876A31D11FE7300F2E6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650876A11D11FE7300F2E6E5 /* Main.storyboard */; };
 		650876A51D11FE7300F2E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650876A41D11FE7300F2E6E5 /* Assets.xcassets */; };
 		650876A81D11FE7300F2E6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650876A61D11FE7300F2E6E5 /* LaunchScreen.storyboard */; };
-		650876B31D11FE7300F2E6E5 /* mobile_eventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */; };
 		653A09211D18B23F00500E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 653A09201D18B23F00500E4F /* GoogleService-Info.plist */; };
 		653A09231D18B64000500E4F /* FireBStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A09221D18B64000500E4F /* FireBStorage.swift */; };
 		6555AB9D1D1AB22800004D65 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555AB9C1D1AB22800004D65 /* Constants.swift */; };
@@ -19,6 +18,8 @@
 		657B163E1D14252200A25676 /* TalksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B163D1D14252200A25676 /* TalksViewController.swift */; };
 		657B16411D14268100A25676 /* TalkCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B16401D14268100A25676 /* TalkCellModel.swift */; };
 		657B16431D1426E600A25676 /* TalksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B16421D1426E600A25676 /* TalksDataSource.swift */; };
+		65AEF27B1D2C278A0016CB69 /* TalksViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AEF27A1D2C278A0016CB69 /* TalksViewControllerTests.swift */; };
+		65AEF27D1D2C2EF60016CB69 /* TalksDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AEF27C1D2C2EF60016CB69 /* TalksDataSourceTests.swift */; };
 		65CBDF611D185B3E00144668 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF601D185B3E00144668 /* Talk.swift */; };
 		65CBDF631D185E9100144668 /* TalkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF621D185E9100144668 /* TalkApi.swift */; };
 		65CBDF661D18609E00144668 /* TalkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBDF651D18609E00144668 /* TalkCoordinator.swift */; };
@@ -45,7 +46,6 @@
 		650876A71D11FE7300F2E6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		650876A91D11FE7300F2E6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		650876AE1D11FE7300F2E6E5 /* mobile-eventTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-eventTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_eventTests.swift; sourceTree = "<group>"; };
 		650876B41D11FE7300F2E6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653A09201D18B23F00500E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		653A09221D18B64000500E4F /* FireBStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBStorage.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		657B163D1D14252200A25676 /* TalksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksViewController.swift; sourceTree = "<group>"; };
 		657B16401D14268100A25676 /* TalkCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCellModel.swift; sourceTree = "<group>"; };
 		657B16421D1426E600A25676 /* TalksDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksDataSource.swift; sourceTree = "<group>"; };
+		65AEF27A1D2C278A0016CB69 /* TalksViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksViewControllerTests.swift; sourceTree = "<group>"; };
+		65AEF27C1D2C2EF60016CB69 /* TalksDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksDataSourceTests.swift; sourceTree = "<group>"; };
 		65CBDF601D185B3E00144668 /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		65CBDF621D185E9100144668 /* TalkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkApi.swift; sourceTree = "<group>"; };
 		65CBDF651D18609E00144668 /* TalkCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkCoordinator.swift; sourceTree = "<group>"; };
@@ -138,8 +140,9 @@
 		650876B11D11FE7300F2E6E5 /* mobile-eventTests */ = {
 			isa = PBXGroup;
 			children = (
-				650876B21D11FE7300F2E6E5 /* mobile_eventTests.swift */,
 				650876B41D11FE7300F2E6E5 /* Info.plist */,
+				65AEF27A1D2C278A0016CB69 /* TalksViewControllerTests.swift */,
+				65AEF27C1D2C2EF60016CB69 /* TalksDataSourceTests.swift */,
 			);
 			path = "mobile-eventTests";
 			sourceTree = "<group>";
@@ -375,7 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650876B31D11FE7300F2E6E5 /* mobile_eventTests.swift in Sources */,
+				65AEF27D1D2C2EF60016CB69 /* TalksDataSourceTests.swift in Sources */,
+				65AEF27B1D2C278A0016CB69 /* TalksViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +535,7 @@
 		};
 		650876BB1D11FE7300F2E6E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD154A6988E9E1232483368 /* Pods-mobile-event.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "mobile-eventTests/Info.plist";
@@ -543,6 +548,7 @@
 		};
 		650876BC1D11FE7300F2E6E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60654C1D4D3C60E938E8E05 /* Pods-mobile-event.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "mobile-eventTests/Info.plist";
